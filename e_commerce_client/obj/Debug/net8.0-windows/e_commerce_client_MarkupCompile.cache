@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-D:\Ynov\API_ecomerce\ecommerce-client\e_commerce_client\obj\Debug\net8.0-windows\
+C:\Users\patch\Desktop\ecommerce-client\e_commerce_client\obj\Debug\net8.0-windows\
 e_commerce_client
 none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP
-D:\Ynov\API_ecomerce\ecommerce-client\e_commerce_client\App.xaml
+C:\Users\patch\Desktop\ecommerce-client\e_commerce_client\App.xaml
 11407045341
 
 4-1206514232
 198-688555687
 MainWindow.xaml;
 
-True
+False
 

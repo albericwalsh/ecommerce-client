@@ -5,11 +5,31 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:e_commerce_client"
         mc:Ignorable="d"
-        Title="E-COMMERCE" Height="450" Width="800">
+        Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <TextBlock Text="E-commerce"
-                   FontSize="30"
-                   HorizontalAlignment="center"
-                   VerticalAlignment="Top"></TextBlock>
+        <!-- image in background -->
+        <Grid.Background>
+            <ImageBrush ImageSource="D:\Ynov\API_ecomerce\ecommerce-client\e_commerce_client\res\background.jpg" />
+        </Grid.Background>
+        <!-- column  -->
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="Auto" />
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <!-- rectangle at center to ECOMERCE to bottom -->
+        <Rectangle Opacity="1" Grid.Column="1" Margin="0,40,0,0" >
+            <Rectangle.Fill>
+                <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
+                    <GradientStop Color="#BAADAD" Offset="0.0"></GradientStop>
+                    <GradientStop Color="#00BAADAD" Offset="0.9"></GradientStop>
+                </LinearGradientBrush>
+            </Rectangle.Fill>
+        
+        </Rectangle>
+        <TextBlock Grid.Column="1" Text="E-COMMERCE" FontSize="150" HorizontalAlignment="Center"  Margin="20,50,25,25"/>
+        <Button Grid.Column="1" Content="Login" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="20,50,20,20" Click="Login_Click" />
+        <Button Grid.Column="1" Content="Register" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="20,00,20,20" Click="Register_Click" />
+
     </Grid>
 </Window>

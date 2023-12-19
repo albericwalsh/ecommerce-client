@@ -8,19 +8,19 @@
     "net8.0-windows7.0": []
   },
   "packageFolders": {
-    "C:\\Users\\patch\\.nuget\\packages\\": {}
+    "C:\\Users\\alber\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\patch\\Desktop\\ecommerce-client\\e_commerce_client\\e_commerce_client.csproj",
+      "projectUniqueName": "D:\\Ynov\\API_ecomerce\\ecommerce-client\\e_commerce_client\\e_commerce_client.csproj",
       "projectName": "e_commerce_client",
-      "projectPath": "C:\\Users\\patch\\Desktop\\ecommerce-client\\e_commerce_client\\e_commerce_client.csproj",
-      "packagesPath": "C:\\Users\\patch\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\patch\\Desktop\\ecommerce-client\\e_commerce_client\\obj\\",
+      "projectPath": "D:\\Ynov\\API_ecomerce\\ecommerce-client\\e_commerce_client\\e_commerce_client.csproj",
+      "packagesPath": "C:\\Users\\alber\\.nuget\\packages\\",
+      "outputPath": "D:\\Ynov\\API_ecomerce\\ecommerce-client\\e_commerce_client\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\patch\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\alber\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0-windows"

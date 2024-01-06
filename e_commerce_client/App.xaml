@@ -4,6 +4,6 @@
              xmlns:local="clr-namespace:e_commerce_client"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
-         
+        
     </Application.Resources>
 </Application>

@@ -5,31 +5,36 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:e_commerce_client"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="E COMMERCE" Height="1080" Width="1920">
     <Grid>
         <!-- image in background -->
         <Grid.Background>
             <ImageBrush ImageSource="D:\Ynov\API_ecomerce\ecommerce-client\e_commerce_client\res\background.jpg" />
         </Grid.Background>
-        <!-- column  -->
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="Auto" />
-            <ColumnDefinition Width="*"/>
-        </Grid.ColumnDefinitions>
-        <!-- rectangle at center to ECOMERCE to bottom -->
-        <Rectangle Opacity="1" Grid.Column="1" Margin="0,40,0,0" >
+        <Rectangle Margin="650,175,650,0">
             <Rectangle.Fill>
-                <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
-                    <GradientStop Color="#BAADAD" Offset="0.0"></GradientStop>
-                    <GradientStop Color="#00BAADAD" Offset="0.9"></GradientStop>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <LinearGradientBrush.RelativeTransform>
+                        <TransformGroup>
+                            <ScaleTransform CenterY="0.5" CenterX="0.5"/>
+                            <SkewTransform CenterX="0.5" CenterY="0.5"/>
+                            <RotateTransform Angle="5" CenterX="0.5" CenterY="0.5"/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </LinearGradientBrush.RelativeTransform>
+                    <GradientStop Color="#00BAADAD" Offset="0.842"/>
+                    <GradientStop Color="#FFBAADAD" Offset="0"/>
                 </LinearGradientBrush>
             </Rectangle.Fill>
-        
+            <Rectangle.OpacityMask>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black"/>
+                    <GradientStop Color="White" Offset="1"/>
+                </LinearGradientBrush>
+            </Rectangle.OpacityMask>
         </Rectangle>
-        <TextBlock Grid.Column="1" Text="E-COMMERCE" FontSize="150" HorizontalAlignment="Center"  Margin="20,50,25,25"/>
-        <Button Grid.Column="1" Content="Login" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="20,50,20,20" Click="Login_Click" />
-        <Button Grid.Column="1" Content="Register" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="20,00,20,20" Click="Register_Click" />
-
+        <TextBlock x:Name="title" TextWrapping="Wrap" FontFamily="Inria Serif" TextAlignment="Center" FontSize="80" Margin="700,198,700,0" VerticalAlignment="Top"><Run Language="fr-fr" Text="E COMMERCE"/></TextBlock>
+        <Button x:Name="login_button" Content="LOGIN" Panel.ZIndex="1" Margin="750,0,750,419" VerticalAlignment="Bottom" FontFamily="Inter Thin" FontSize="60" Padding="10,40,10,40" BorderBrush="{x:Null}" Background="#FFD9D9D9" Click="login_click"/>
+        <Button x:Name="register_button" Content="REGISTER" Panel.ZIndex="1" Margin="750,700,750,0" VerticalAlignment="Top" FontFamily="Inter Thin" FontSize="60" Padding="10,40,10,40" BorderBrush="{x:Null}" Background="#FFD9D9D9" Click="register_click"/>
     </Grid>
 </Window>

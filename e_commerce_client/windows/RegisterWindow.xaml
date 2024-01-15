@@ -1,0 +1,26 @@
+﻿<Window x:Class="e_commerce_client.windows.RegisterWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:e_commerce_client.windows"
+        mc:Ignorable="d"
+        Title="REGISTER" Height="820" Width="700">
+    <Grid>
+        <TextBlock Margin="50,50,50,0" TextWrapping="Wrap" VerticalAlignment="Top" FontFamily="Inria Serif" FontSize="80" TextAlignment="Center" Grid.RowSpan="1"><Run Language="fr-fr" Text="REGISTER"/></TextBlock>
+        <Grid Margin="50,206,50,0" VerticalAlignment="Top">
+            <Rectangle StrokeThickness="5" Stroke="Black"/>
+            <TextBox x:Name="UserName_register_textbox" TextWrapping="Wrap" TextChanged="User_TextChanged" SelectionBrush="#FF717171" FontFamily="Inter Medium" FontSize="85" Padding="10,10,10,10" Margin="120,5,5,5" BorderBrush="#00ABADB3"/>
+            <Image HorizontalAlignment="Left" Margin="20,20,0,20" Width="100" Source="/res/icons/Contacts.png"/>
+
+        </Grid>
+        <Grid Margin="50,400,50,0" VerticalAlignment="Top">
+            <Rectangle StrokeThickness="5" Stroke="Black"/>
+            <TextBox x:Name="Password_register_textbox" TextWrapping="Wrap" TextChanged="Password_TextChanged" SelectionBrush="#FF717171" FontFamily="Inter Medium" FontSize="85" Padding="10,10,10,10" Margin="120,5,5,5" BorderBrush="#00ABADB3"/>
+            <Image Height="100" Width="100" HorizontalAlignment="Left" Margin="20,20,0,20" Source="/res/icons/Lock.png"/>
+
+        </Grid>
+        <Button x:Name="register_button_ok" Content="REGISTER" Margin="50,600,50,0" Height="150" VerticalAlignment="Top" FontFamily="Inter Thin" FontSize="80" Padding="5,10,5,12" Click="register_clic"/>
+
+    </Grid>
+</Window>
